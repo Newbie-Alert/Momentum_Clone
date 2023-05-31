@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- greeting -->
+    <div class="greet-container">
+      <form class="greet-form" action="#">
+        <input
+          class="greet-input"
+          type="text"
+          placeholder="What is your name?"
+          required
+          maxlength="12"
+        />
+      </form>
+    </div>
+    <!-- clock -->
+    <div class="clock-container hidden">
+      <div class="clock">
+        <h1 class="time">00:00</h1>
+      </div>
+    </div>
+    <!-- quotes -->
+    <div class="quote-container hidden"></div>
+    <!-- todo -->
+    <h3 class="todo-switch hidden">+ todo</h3>
+    <div class="todo-container hidden">
+      <div class="todo">
+        <form class="todo-form">
+          <input placeholder="Write to Do" required type="text" />
+        </form>
+        <!-- <ul>
+          <li>냔냔<span>x</span></li>
+        </ul> -->
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="BGImg.js"></script>
+    <script src="quotes.js"></script>
+    <script src="greet.js"></script>
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>

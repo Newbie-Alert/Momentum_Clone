@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.greet-input{
+  position: absolute;
+  text-align: center;
+  width: 180px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: none;
+}
+
+.greet-input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+  transition: all 1s;
+}
+
+/* clock stlye */
+
+.clock-container {
+  width: 200px;
+  height: 100px;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  position: relative;
+}
+.clock > h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+}
+
+/* quotes */
+
+.quote-container {
+  width: 100%;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-container > p {
+  margin-top: 9px;
+}
+
+/* todo */
+
+.todo-switch{
+  color: white;
+  position: absolute;
+  right: 3%;
+  bottom: 12%;
+  transform: translate(-20%,-1%);
+}
+.todo-container {
+  position: absolute;
+  bottom: 15%;
+  right: 3%;
+  padding: 9px;
+  width: 21%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.todo {
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.todo > li {
+  width: 100%;
+  list-style: none;
+}
+
+.todo-form{
+  width: 100%;
+}
+
+.todo-form input {
+  width: 100%;
+}
+
+
+
+
+/* media query */
+
+@media(min-width:1200px){
+  .clock > h1{
+    font-size: 10em;
+  }
+  .todo-switch {
+  position: absolute;
+  right: 4%;
+  bottom: 12%;
+  }
+}
+
+@media (max-width:1200px) {
+  .quote-container{
+    font-size: 0.72rem;
+    padding: 10px;
+    bottom: 2%;
+  }
+  .todo-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 18%);
+  padding: 9px;
+  width: 55%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: scroll;
+}
+}
